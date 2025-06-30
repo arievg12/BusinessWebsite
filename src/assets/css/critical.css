@@ -88,6 +88,32 @@
     margin-bottom: clamp(1.5rem, 2vw, 1.5rem);
     color: #fff;
   }
+  #hero-82 .cs-button-group {
+    display: flex;
+    /* Enable flexbox */
+    flex-direction: row;
+    /* Stack buttons vertically on mobile */
+    align-items: center;
+    /* Center buttons horizontally when stacked */
+    gap: 1rem;
+    /* Vertical space between buttons */
+    width: 100%;
+    max-width: 25rem;
+    /* Limit the width of the button column on mobile */
+    margin: 0 auto;
+    /* Center the button group */
+    margin-top: 0;
+    /* No top margin needed, controlled by hero-button-text */
+  }
+  #hero-82 .cs-button-group .cs-button-solid {
+    width: 100%;
+    /* Buttons take full width of the group */
+    max-width: 10rem;
+    /* Max width for individual buttons on mobile */
+    /* Ensure the cs-button-solid base styles are still applied for padding, etc. */
+    margin: 0;
+    /* Remove auto margin, flexbox handles positioning */
+  }
   #hero-82 .cs-button-solid {
     font-size: 1rem;
     line-height: 3.5rem;

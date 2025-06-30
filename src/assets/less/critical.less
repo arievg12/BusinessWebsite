@@ -96,6 +96,24 @@
             color: #fff;
         }
 
+        .cs-button-group{
+            display: flex; /* Enable flexbox */
+            flex-direction: row; /* Stack buttons vertically on mobile */
+            align-items: center; /* Center buttons horizontally when stacked */
+            gap: (16/16rem); /* Vertical space between buttons */
+            width: 100%;
+            max-width: (400/16rem); /* Limit the width of the button column on mobile */
+            margin: 0 auto; /* Center the button group */
+            margin-top: 0; /* No top margin needed, controlled by hero-button-text */
+        }
+
+        .cs-button-group .cs-button-solid {
+            width: 100%; /* Buttons take full width of the group */
+            max-width: (160/16rem); /* Max width for individual buttons on mobile */
+            /* Ensure the cs-button-solid base styles are still applied for padding, etc. */
+            margin: 0; /* Remove auto margin, flexbox handles positioning */
+        }
+
         .cs-button-solid {
             font-size: (16/16rem);
             line-height: (56/16rem);
