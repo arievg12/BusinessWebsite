@@ -92,13 +92,13 @@
     display: flex;
     /* Enable flexbox */
     flex-direction: row;
-    /* Stack buttons vertically on mobile */
     align-items: center;
     /* Center buttons horizontally when stacked */
-    gap: 1rem;
+    justify-content: center;
+    gap: 0.625rem;
     /* Vertical space between buttons */
     width: 100%;
-    max-width: 25rem;
+    max-width: 28.125rem;
     /* Limit the width of the button column on mobile */
     margin: 0 auto;
     /* Center the button group */
@@ -108,7 +108,7 @@
   #hero-82 .cs-button-group .cs-button-solid {
     width: 100%;
     /* Buttons take full width of the group */
-    max-width: 10rem;
+    max-width: 11.25rem;
     /* Max width for individual buttons on mobile */
     /* Ensure the cs-button-solid base styles are still applied for padding, etc. */
     margin: 0;
@@ -144,6 +144,16 @@
   }
   #hero-82 .cs-button-solid:hover:before {
     width: 100%;
+  }
+}
+/* NEW MEDIA QUERY FOR VERY SMALL SCREENS (less than 350px) */
+@media only screen and (max-width: 21.875rem) {
+  /* 350px viewport width */
+  #hero-82 .cs-button-group .cs-button-solid {
+    padding: 0 0.75rem;
+    /* Reduce horizontal padding to 16px (1rem) */
+    /* If still an issue, you might consider slightly reducing font-size here too: */
+    /* font-size: (14/16rem); */
   }
 }
 /* Dark Mode */
