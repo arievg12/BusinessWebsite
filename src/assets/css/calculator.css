@@ -126,7 +126,7 @@
 #costTable td {
   border: 1px solid #ddd;
   padding: 0.75rem;
-  text-align: right;
+  text-align: center;
   color: var(--bodyTextColor);
   transition: color 0.3s ease, border-color 0.3s ease;
   /* Add transition */
