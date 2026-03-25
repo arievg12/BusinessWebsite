@@ -1,5 +1,5 @@
 module.exports = {
-    "name": "Saltwater Sites",
+    "name": "Fern Digital",
     "email": "help@codestitch.app",
     "phoneForTel": "555-779-4407",
     "phoneFormatted": "(555) 779-4407",
